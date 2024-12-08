@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#" id="logo">Portfólio</a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu" id="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="#" id="home-link" onclick="showSection('home')">inicio</a>
+            <a href="#" id="about-link" onclick="showSection('about')">sobre</a>
+            <a href="#" id="skills-link" onclick="showSection('skills')">Skills</a>
+            <a href="#" id="portfolio-link" onclick="showSection('portfolio')">Portfolio</a>
+            <a href="#" id="contact-link" onclick="showSection('contact')">contato</a>
+        </nav>
+    </header>
+
+
+    <section id="home" class="section home-section">
+        <div class="main">
+            <div class="images">
+                <div class="blue-bg-outer">
+                   <div class="white-bg">
+                        <div class="blue-bg">
+                            <img src="assets/img.png" alt="image">
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="Information">
+                <h1> Johny Santos</h1>
+                 <div class="animated_text">
+                    <h1 class="title">Front-end Developer</h1>
+                  </div>
+                <p>Olá! Muito prazer, sou Johny Santos,<br> um entusiasta do desenvolvimento web e programador front-end<br> com uma paixão ardente por criar interfaces web impressionantes e funcionais.<br> Minha jornada profissional tem sido marcada por uma busca constante por inovação,<br> aprimoramento de habilidades e uma dedicação incansável à criação de soluções únicas.
+                </p>
+                <div class="social">
+                    <a href="https://github.com/johnysantos22"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/johnyysantoss/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/johny-santos/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="cv-btn">Download CV</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section" style="display: none;">
+        <h1>Sobre</h1>
+       
+    </section>
+
+    <section id="skills" class="section skills-section" style="display: none;">
+     <h1>Skills</h1>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section" style="display: none;">
+        <h1>portfolio</h1>
+    </section>
+
+    <section id="contact" class="section contact-section" style="display: none;">
+        <h1>contact</h1>
+    </section>
+
+   
+<script src="js/index.js"></script>
+</body>
+</html>
